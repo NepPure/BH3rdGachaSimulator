@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace me.luohuaming.Gacha.UI
 {
-    public class INIhelper
+    public static class INIhelper
     {
         /// <summary>
         /// 修改INI配置文件
@@ -39,7 +39,7 @@ namespace me.luohuaming.Gacha.UI
         /// <param name="val">值</param>
         /// <param name="filepath">文件完整路径</param>
         /// <returns></returns>    
-        public static long IniWrite(string section, string key, string val, string filepath)
+        public static long IniWrites(string section, string key, string val, string filepath)
         {
             return WritePrivateProfileString(section, key, val, filepath);
         }
@@ -51,7 +51,7 @@ namespace me.luohuaming.Gacha.UI
         /// <param name="def">缺省值</param>
         /// <param name="filePath">完整路径</param>
         /// <returns></returns>
-        public static string IniRead(string section, string key, string def, string filePath)
+        public static string IniReads(string section, string key, string def, string filePath)
         {
             StringBuilder retval = new StringBuilder();
             GetPrivateProfileString(section, key, def, retval, 255, filePath);
@@ -72,5 +72,28 @@ namespace me.luohuaming.Gacha.UI
         {
             return GetPrivateProfileString(section, key, def,retval,size ,filePath);
         }
+        public static int ToInt322(this object str)
+        {
+            try
+            {
+                return Convert.ToInt32(str);
+            }
+            catch
+            {
+                return 0;
+            }
+        }
+        public static long ToInt644(this object str)
+        {
+            try
+            {
+                return Convert.ToInt64(str);
+            }
+            catch
+            {
+                return 0;
+            }
+        }
+
     }
 }
