@@ -1,5 +1,5 @@
 ## 崩坏3抽卡模拟图片版
-基于Jie2GG的[Native.FrameWork](https://github.com/Jie2GG/Native.Framework)框架，依托于酷Q平台进行开发
+基于Jie2GG的[Native.FrameWork](https://github.com/Jie2GG/Native.Framework)框架的v4.2.1.0429版本，依托于酷Q平台进行开发
 
 ## 引言
 交流群:671467200<br>
@@ -18,6 +18,7 @@
 - [x] 可更改的抽卡概率
 - [x] 签到与水晶限制机制
 - [x] 文字版抽卡结果
+- [x] 快速抽卡（一个指令完成对池子毕业项目的抽取）
 ### 指令控制
 - [x] 支持群聊与私聊
 - [x] 数据各群之间独立
@@ -25,17 +26,18 @@
 - [x] 批量导入群与管理员
 - [x] 自定义指令与回答文本
 - [x] 通过接收消息实现开关
-- [ ] 通过接收消息实现更改抽卡池更换
 - [x] 允许执行sql语句
 - [x] 后台群详细功能（功能制作中……)
 - [x] 检查更新 
-### 卡池预览
+### 卡池更改
 - [ ] 名称纠错
+- [ ] 通过接收消息实现更改抽卡池更换
+- [x] 通过爬取崩坏3官网的公告来实现自动更换卡池
 ### 尚未想到的功能……
 
 ## 如何使用
 1.下载插件[本体](https://cqp.cc/t/47221) 扩展名为cpk<br>
-2.下载插件所必须的[数据包](https://www.lanzous.com/iadd8ba) (2020.3.18)<br>
+2.下载插件所必须的[数据包](https://lanzous.com/ibietkh) (2020.4.17)<br>
 3.下载插件需要的[字体](https://www.lanzous.com/i9hl6ve) (2020.2.19)<br>
 4.将cpk复制到酷Q的插件目录 ...\CQP-xiaoi\酷Q Pro\app下<br>
 ![说明图片1](https://i.loli.net/2020/03/21/QfVBumNkZ54j1bP.png)<br>
@@ -63,3 +65,7 @@ clone下载之后，设置Native.Core项目的生成目录为 ...\CQP-xiaoi\酷Q
 GitHub：https://github.com/Jie2GG/Native.Framework<br>
 
 感谢解包大佬提供的解包！没有解包图片就没有这个项目了
+## 赞助环节
+小小项目维护不易，您的赞助将成为我持续更新的动力。只要我还在玩崩坏三一天，我就会一直维护下去!<br>
+![AliPay](https://i.loli.net/2020/05/06/PAI3zJMTai9EOsC.jpg)
+![WeChatPay](https://i.loli.net/2020/05/06/HjITkviRJGfAox4.png)
