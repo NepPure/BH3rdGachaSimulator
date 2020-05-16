@@ -484,10 +484,10 @@ namespace me.luohuaming.Gacha.UI
                 {
                     Directory.CreateDirectory($@"{CQSave.ImageDirectory}\装备结果");
                 }
-                Point p = new Point(1471, 813);
-                Font font = new Font("汉仪丫丫体简", 15F);
-                Color color = Color.FromArgb(0, 0, 0);
-                background = AddText2Image(background, "Powered by @水银之翼", p, font, color, 0);
+                //Point p = new Point(1471, 813);
+                //Font font = new Font("汉仪丫丫体简", 15F);
+                //Color color = Color.FromArgb(0, 0, 0);
+                //background = AddText2Image(background, "Powered by @水银之翼", p, font, color, 0);
                 ini = new IniConfig(CQSave.AppDirectory + "Config.ini");
                 ini.Load();
                 if (ini.Object["ExtraConfig"]["ImageFormat"].GetValueOrDefault("jpg") == "jpg")
